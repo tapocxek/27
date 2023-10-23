@@ -95,6 +95,26 @@
   max-width: 270px;
 }
 
+.section_item_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  margin-bottom: 30px;
+}
+
+.icones {
+  width: 70px;
+  height: 70px;
+}
+
+.icones:hover {
+  fill: #2196f3;
+}
+
 .section_item h5 {
   font-size: 14px;
   letter-spacing: 0.42px;
