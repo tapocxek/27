@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,11 +22,15 @@
   <body>
     <header>
       <nav class="header_nav">
-        <img src="img/WebStudio.svg" alt="" class="header_nav_svg" />
+        <img src="img/WebStudio.svg" alt="logo" class="header_nav_svg" />
         <ul class="header_nav_list">
-          <li class="header_nav_list_li">Студія</li>
-          <li class="header_nav_list_li">Портфоліо</li>
-          <li class="header_nav_list_li">Контакти</li>
+          <li>
+            <a href="index.html" class="header_nav_link">Студія</a>
+          </li>
+          <li>
+            <a href="portfolio.html" class="header_nav_link">Портфоліо</a>
+          </li>
+          <li><a href="#" class="header_nav_link">Контакти</a></li>
         </ul>
         <div class="header_nav_info">
           <p class="header_nav_info_p">info@devstudio.com</p>
@@ -47,7 +50,40 @@
         </button>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <button class="button-close" data-modal-close>X</button>
+            <button class="button-close" data-modal-close>
+              <img src="/img/X.svg" alt="X" class="button-close_img" />
+            </button>
+            <p class="modal_leave-data">
+              Залиште свої дані, ми вам передзвонимо
+            </p>
+            <div class="modal_container">
+              <p class="modal_text">Ім'я</p>
+              <input type="text" />
+              <img src="img/person-black-18.svg" alt="person" />
+            </div>
+            <div class="modal_container">
+              <p class="modal_text">Телефон</p>
+              <input type="text" />
+              <img src="img/phone-black-18.svg" alt="telephone" />
+            </div>
+            <div class="modal_container">
+              <p class="modal_text">Пошта</p>
+              <input type="text" />
+              <img src="img/email-black-18.svg" alt="email" />
+            </div>
+            <div class="modal_container coment">
+              <p class="modal_text">Коментар</p>
+              <textarea name="coment" cols="30" rows="10">
+              Введіть текст</textarea
+              >
+            </div>
+            <div class="modal_wrapper">
+              <input type="checkbox" class="modal_checkbox" />
+              <label for="modal_checkbox"
+                >Погоджуюся з розсилкою та приймаю Умови договору</label
+              >
+              <button class="modal_button"></button>
+            </div>
           </div>
         </div>
         <script src="modal.js"></script>
@@ -106,17 +142,25 @@
       <section class="section2">
         <h1>Чим ми займаємося</h1>
         <div class="section2_container">
-          <img class="section2_img" src="img/box_1.png" alt="" />
+          <img
+            class="section2_img"
+            src="img/box_1.png"
+            alt="Desktop programs"
+          />
           <div class="section2_wrapper w1">
             <p class="section2_text">Десктопні додатки</p>
           </div>
 
-          <img class="section2_img" src="img/box_2.png" alt="" />
+          <img class="section2_img" src="img/box_2.png" alt="mobile apps" />
           <div class="section2_wrapper w2">
             <p class="section2_text">Мобільні додатки</p>
           </div>
 
-          <img class="section2_img" src="img/box_3.png" alt="" />
+          <img
+            class="section2_img"
+            src="img/box_3.png"
+            alt="design solutions"
+          />
           <div class="section2_wrapper w3">
             <p class="section2_text">Дизайнерські рішення</p>
           </div>
@@ -127,22 +171,22 @@
       <h1>Наша команда</h1>
       <div class="wrapper">
         <div class="footer_container">
-          <img src="img/img1.jpg" alt="" />
+          <img src="img/img1.jpg" alt="Man in compani" />
           <h5>Ігор Дем'яненко</h5>
           <p>Product Designer</p>
         </div>
         <div class="footer_container">
-          <img src="img/img2.jpg" alt="" />
+          <img src="img/img2.jpg" alt="Woman in compani" />
           <h5>Ольга Рєпіна</h5>
           <p>Frontend Developer</p>
         </div>
         <div class="footer_container">
-          <img src="img/img3.jpg" alt="" />
+          <img src="img/img3.jpg" alt="Man in compani" />
           <h5>Микола Тарасов</h5>
           <p>Marketing</p>
         </div>
         <div class="footer_container">
-          <img src="img/img4.png" alt="" />
+          <img src="img/img4.png" alt="Man in compani" />
           <h5>Михайло Єрмаков</h5>
           <p>UI Designer</p>
         </div>
