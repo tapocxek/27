@@ -51,38 +51,49 @@
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button class="button-close" data-modal-close>
-              <img src="/img/X.svg" alt="X" class="button-close_img" />
+              <p class="button-close_text">X</p>
             </button>
             <p class="modal_leave-data">
               Залиште свої дані, ми вам передзвонимо
             </p>
             <div class="modal_container">
               <p class="modal_text">Ім'я</p>
-              <input type="text" />
-              <img src="img/person-black-18.svg" alt="person" />
+              <input type="text" class="modal_input" />
+              <img
+                src="img/person-black-18.svg"
+                alt="person"
+                class="modal_img"
+              />
             </div>
             <div class="modal_container">
               <p class="modal_text">Телефон</p>
-              <input type="text" />
-              <img src="img/phone-black-18.svg" alt="telephone" />
+              <input type="text" class="modal_input" />
+              <img
+                src="img/phone-black-18.svg"
+                alt="telephone"
+                class="modal_img"
+              />
             </div>
             <div class="modal_container">
               <p class="modal_text">Пошта</p>
-              <input type="text" />
-              <img src="img/email-black-18.svg" alt="email" />
+              <input type="text" class="modal_input" />
+              <img src="img/email-black-18.svg" alt="email" class="modal_img" />
             </div>
-            <div class="modal_container coment">
+            <div class="modal_container">
               <p class="modal_text">Коментар</p>
-              <textarea name="coment" cols="30" rows="10">
-              Введіть текст</textarea
-              >
+              <input
+                type="text"
+                placeholder="Введіть текст"
+                class="modal_input coment"
+              />
             </div>
             <div class="modal_wrapper">
               <input type="checkbox" class="modal_checkbox" />
               <label for="modal_checkbox"
-                >Погоджуюся з розсилкою та приймаю Умови договору</label
+                >Погоджуюся з розсилкою та приймаю
+                <a class="modal_checkbox_link">Умови договору</a></label
               >
-              <button class="modal_button"></button>
+              <button class="modal_button">Відправити</button>
             </div>
           </div>
         </div>
