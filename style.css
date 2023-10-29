@@ -164,6 +164,10 @@ a {
   stroke: rgba(0, 0, 0, 0.1);
 }
 
+.button-close_text:hover {
+  color: #2196f3;
+}
+
 .modal_leave-data {
   color: #212121;
   font-family: Roboto;
@@ -175,6 +179,15 @@ a {
 
 .modal_container {
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modal_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .modal_text {
@@ -194,16 +207,31 @@ a {
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
+.modal_input:hover {
+  border: 1px solid #2196f3;
+}
+
+.modal_input:hover .img_fill {
+  fill: #2196f3;
+}
+
 .coment {
   height: 120px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: start;
 }
 
 .modal_img {
   position: absolute;
   left: 50px;
-  margin-top: 10px;
+  margin-top: 15px;
   width: 18px;
   height: 18px;
+}
+
+.modal_checkbox {
+  margin-right: 7px;
 }
 
 .modal_checkbox_link {
@@ -211,6 +239,8 @@ a {
 }
 
 .modal_button {
+  border: none;
+  margin: 0 auto;
   color: #fff;
   text-align: center;
   font-family: Roboto;
